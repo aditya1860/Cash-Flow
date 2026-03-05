@@ -1,14 +1,9 @@
 {
-  "extends": "expo/tsconfig.base.json",
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true,
-    "esModuleInterop": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./client/*"],
-      "@shared/*": ["./shared/*"]
-    },
-    "types": ["node"]
-  },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
+      "@/*": ["*"]
+    }
+  }
 }
